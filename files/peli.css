@@ -139,3 +139,24 @@
             80%     { transform: translateX(3px); }
         }
         .shake { animation: shake .3s ease; }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 4px;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: rgba(232, 196, 196, 0.6);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.15s, color 0.15s;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            background: rgba(232, 196, 196, 0.1);
+            color: #e8c4c4;
+        }   
