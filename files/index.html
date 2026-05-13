@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-brand">Sudoku</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Etusivu</a></li>
+            <li><a href="register.html" class="nav-link">Rekisteröidy</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="content">
+    <h2>Tervetuloa Sudokuun!</h2>
+
+    <div class="titultex">
+        <p>Täytä 9×9-ruudukko niin, että jokainen rivi, sarake ja 3×3-lohko sisältää numerot 1–9.</p>
+        <p>Valitse vaikeus aloittaessasi: helppo, keskitaso tai vaikea.</p>
+        <p>Peliä ei voi pelata ilman kirjautumista — kirjaudu alla tai rekisteröidy ensin.</p>
+
+        <form class="login-form" id="loginForm">
+            <input type="text" id="usernameInput" placeholder="Käyttäjänimi" autocomplete="off">
+            <input type="password" id="passwordInput" placeholder="Salasana">
+            <div id="login-error"></div>
+            <button type="submit" class="login-btn">Kirjaudu</button>
+        </form>
+
+        <div class="register-prompt">
+            <p>Ei vielä tiliä?</p>
+            <a href="register.html" class="register-btn">Rekisteröidy nyt →</a>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
